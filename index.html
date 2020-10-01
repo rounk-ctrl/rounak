@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <title>Website</title>
+      <title>Website(Alpha!)</title>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,13 +11,13 @@
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
       	      	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       	      	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
-      <style> 
+      <style>
       			@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
       			@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap");
- 
+
 html{
-	-webkit-box-sizing: border-box; 
-	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	  box-sizing: border-box;
 	  -webkit-user-select: none;
 	   -moz-user-select: none;
@@ -393,7 +393,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#543ab7', end
 	margin-bottom: 0;
 }
 .w{
-  font-family: "Noto Sans TC", sans-serif;	
+  font-family: "Noto Sans TC", sans-serif;
 }
 button:focus{ /* csslint allow: outline-none */
 	outline: 0;
@@ -616,19 +616,19 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
 </div>
 
 
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
+
+
+
+
+
+
+
+
+
+
+
+
+
 				<!-----------All JavaScripts-------->
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -640,9 +640,9 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
 
 <script>
 /*eslint-env jquery */
-$(window).on('load', function() { // makes sure the whole site is loaded 
-  $('#status').fadeOut(); // will first fade out the loading animation 
-  $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+$(window).on('load', function() { // makes sure the whole site is loaded
+  $('#status').fadeOut(); // will first fade out the loading animation
+  $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
   $('body').delay(350).css({'overflow':'visible'});
 })
 </script>
@@ -655,18 +655,18 @@ $(function(){
     if($(this).find(".ink").length === 0){
         $(this).prepend("<span class='ink'></span>");
     }
-         
+
     ink = $(this).find(".ink");
     ink.removeClass("animate");
-     
+
     if(!ink.height() && !ink.width()){
         d = Math.max($(this).outerWidth(), $(this).outerHeight());
         ink.css({height: d, width: d});
     }
-     
+
     x = e.pageX - $(this).offset().left - ink.width()/2;
     y = e.pageY - $(this).offset().top - ink.height()/2;
-     
+
     ink.css({top: y+'px', left: x+'px'}).addClass("animate");
 });
 });
